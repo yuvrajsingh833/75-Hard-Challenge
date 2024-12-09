@@ -1,0 +1,232 @@
+//Hard Day-1(09/12/2024)
+
+//Reference Type-Objects and  Arrays
+
+//Creation of Arrays
+
+//method-1
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(arr);
+
+//method-2 (Array Constructor)
+
+// let brr = new Array(1, 'Yuvraj', true, 46.2);
+// console.log(brr);
+
+//Acccesing of an Array Element
+
+// let arr = [1, 'Yuvraj', true, 46.2];
+// console.log(arr[0]);
+// console.log(arr[2]);
+
+// console.log(arr);
+
+//Built in Operations of Arrays
+
+// let arr = [1, 'Yuvraj', true, 46.2];
+// console.log(arr);
+
+// arr.push("Yuvraj Singh Rathore");
+// //console.log(arr);
+
+// arr.pop();
+// //console.log(arr);
+
+
+// arr.shift() //remove first elemeent
+// //console.log(arr);
+
+// arr.unshift(85.45621) //add first element
+// console.log(arr);
+
+
+// console.log(arr.slice(1, 4)); // //getting particular part of array
+
+// arr.splice(1, 2, 'Rathore')
+// console.log(arr) //Changing array Content (1 index se 2 value change kro aur uski jagah Rathore likho)
+
+
+//map opertion
+
+// let arr = [10, 20, 30, 40];
+
+// arr.map((number, index) => {
+//     console.log(number);
+//     console.log(index);
+
+// })
+
+
+// let ansArray = arr.map((number) => {
+//     return number * number;
+// });
+
+// console.log(ansArray);
+
+
+//filter opertion
+
+// let arr = [2, 15, 78, 96, 45, 47, 260];
+
+// let ansArray = arr.filter((number) => {
+
+//     return number % 2 == 0;
+
+//     // if (number % 2 == 0) {
+//     //     return true;
+//     // } else{
+//     //     return false;
+//     // }
+// })
+
+//console.log(ansArray);
+
+// let arr = [2, 46, 'Yuvraj', 'Rathore', 48.5, true];
+
+// let ans = arr.filter((number) => {
+//     return typeof (number) == 'string'
+// })
+
+// console.log(ans);
+
+
+//reduce operations
+
+// let arr=[10,20,30,40];
+
+// let ans=arr.reduce((acc,curr)=>{
+//     return acc+curr;
+// },0);
+
+// console.log(ans);
+
+
+//sort in ascending order
+
+// let arr = [10, 6, 48, 96, 25, 76];
+// //arr.sort((a, b) => a - b);
+
+// arr.sort((a, b) => b - a);
+// console.log(arr);
+
+//indexof operation
+
+// let arr = [1, 54, 25, 86, 45];
+
+// console.log(arr.indexOf(86));
+
+//find opertions
+
+// let arr = [1, 54, 25, 86, 45];
+
+// let found = arr.find(num => num > 30);
+// console.log(found);
+
+
+// const users = [
+//     { id: 1, name: "Alice" },
+//     { id: 2, name: "Bob" },
+//     { id: 3, name: "Charlie" }
+// ];
+
+// const user = users.find(user => user.id === 2);
+// console.log(user); // Output: { id: 2, name: 'Bob' }
+
+
+//forEach Loop
+
+// let arr = [10, 45, 5, 48, 96];
+
+// arr.forEach((number, index) => {
+//     console.log("Number is:", number, " and index is:", index);
+
+// })
+
+//for in loop
+
+// let obj = {
+//     name: 'Yuvraj',
+//     age: 23,
+//     number: 123,
+//     weight: 60
+// }
+
+// for (let key in obj) {
+//     console.log(key, obj[key]);
+
+// }
+
+
+//for of loop
+
+// let arr = [10, 15, 546, 45];
+
+// for (let value of arr) {
+//     console.log(value);
+
+// }
+
+
+// let string = "Yuvraj";
+
+// for (let value of string) {
+//     console.log(value);
+
+// }
+
+
+//Arrays with function
+
+//let arr = [10, 20, 5, 45, 33];
+
+//method-1
+
+// let getSum = (arr) => {
+//     let length = arr.length;
+//     let sum = 0;
+//     for (let i = 0; i < length; i++) {
+//         sum += arr[i];
+//     }
+
+//     return sum;
+// }
+
+// let result = getSum(arr);
+// console.log(result);
+
+
+//method-2 using forEach loop
+
+// let arr = [10, 20, 5, 45, 33];
+
+// let getSum = (arr) => {
+//     let sum = 0;
+//     arr.forEach((num) => {
+//         sum += num;
+//     })
+
+//     return sum;
+// }
+
+// let result = getSum(arr);
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
